@@ -12,6 +12,10 @@ public class Proprietario extends Pessoa {
     public double getValorAluguel() {
         return valorAluguel;
     }
+
+    public void setValorAluguel(double valorAluguel) {
+        this.valorAluguel = valorAluguel;
+    }
     
     
 }

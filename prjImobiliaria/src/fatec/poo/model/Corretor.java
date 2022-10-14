@@ -18,6 +18,10 @@ public class Corretor extends Pessoa{
     public double getTotalLocacao() {
         return totalLocacao;
     }
+
+    public void setTaxaLocacao(double taxaLocacao) {
+        this.taxaLocacao = taxaLocacao;
+    }
     
     
     
