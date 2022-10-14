@@ -1,14 +1,17 @@
 
 import fatec.poo.model.Corretor;
 import fatec.poo.model.Proprietario;
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class AplicImobiliaria {
     public static void main(String[] args) {
          
     //Scanner entrada = new Scanner(System.in);  
+    DecimalFormat df = new DecimalFormat("0");
     Corretor[] corretor = new Corretor[3];
     Proprietario[] proprietario = new Proprietario[3];
+    
     
     
     //Corretor(double taxaLocacao, int codigo, String nome) {
@@ -17,12 +20,16 @@ public class AplicImobiliaria {
     corretor[2] = new Corretor(4, 2222, "Carlos");
                                       //double valorAluguel, int codigo, String nome)
     proprietario[0] = new Proprietario(1500, 9090, "Alda");
-    proprietario[1] = new Proprietario(900, 2222, "Alda");
-    proprietario[2] = new Proprietario(1000, 4444, "Alda");
-            
-            
-    
-   
+    proprietario[1] = new Proprietario(900, 2222, "Cássia");
+    proprietario[2] = new Proprietario(1000, 4444, "Lauro");
+         System.out.println("código\tnome\ttaxa de locação(%)");  
+       for(int i=0; i<3; i++)     {
+           System.out.println( corretor[i].getCodigo()+ "\t"+ corretor[i].getNome() +"\t\t"+ df.format(corretor[i].getTaxaLocacao()));
+       }
+    System.out.println("\ncódigo\tnome\tvalor do aluguel");
+    for(int i=0; i<3; i++){
+        System.out.println(proprietario[i].getCodigo()+"\t"+ proprietario[i].getNome()+"\t\t" + proprietario[i].getValorAluguel());
+    }
             
     
     }
