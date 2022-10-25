@@ -30,7 +30,7 @@ public class AplicRestaurante {
             formPag = input.nextInt();
             totalPag = input.nextDouble();
             //int pedido, double totalPagar, int codigo, String nome
-            objCliente[i] = new Cliente(pedido, totalPagar, )
+            
         }
         
     }
