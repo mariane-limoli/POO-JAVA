@@ -13,7 +13,7 @@ public class Exemplo1 {
     @SuppressWarnings("empty-statement")
     
      public static void main(String[] args) {
-         Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in);
         String descProd;
         int codProd, qtdeVend;
         double precUnit, valPagar;
@@ -27,6 +27,6 @@ public class Exemplo1 {
         System.out.print("Digite a qtde. vendida: ");
         qtdeVend = entrada.nextInt(); //scanf("%d", &qtdeVend);
         valPagar = precUnit * qtdeVend;
-        System.out.println("Valor a pagar R$ " + valPagar);
-    } //fim do main   
+        System.out.println("Valor a pagar R$ " + valPagar);    
+     } //fim do main   
 }//fim da classe
